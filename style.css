@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* shared styles */
+.primary-btn{
+    background-color:#E02C6D ;
+    color: #FFFFFF;
+    border-radius: 40px;
+    border: none;
+    padding: 10px;
+}
+/* header styles */
+header{
+    max-width: 1155px;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+/* navbar styles */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-weight: bold;
+    font-size:24px ;
+}
+.navlist{
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+.navlist li{
+   list-style-type: none;
+   font-size: 16px;
+   font-weight: 600;
+}
+.navlist li a{
+    text-decoration: none;
+    color: black;
+}
+/* banner styles */
+.banner{
+    margin-top: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner-content{
+    width: 582px;
+}
+.banner-title{
+    font-size: 52px;
+    font-weight: 700; 
+    line-height: 70px;
+    margin-bottom: 16px;
+}
+.banner-description{
+    font-size: 16px;
+    font-weight: 600; 
+    margin-bottom: 16px; 
+}
+.banner-img{
+    background-image: url(./images/Circle\ design.svg);
+}
+
+/* sponser styles */
+.sponser{
+    max-width:1110px ;
+    margin-top: 90px;
+    margin: 0 auto;
+}
+
+.sponser-logos{
+    max-width:1110px ;
+    margin-top: 90px;
+    padding: 30px 60px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 60px;
+}
+
+/* collection styles */
+.collection-card{
+    width: 329px;
+    padding: 17px 14px;
+    box-shadow: 2px -4px 14px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 2px -4px 14px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px -4px 14px 0px rgba(0,0,0,0.75);
+}
+.collection{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+/* responsive styles */
+@media screen and (max-width:570px){
+    .navbar,
+    .navlist{
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-content{
+        width: 350px;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .sponser-logos{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
