@@ -92,6 +92,7 @@ header{
 .collection{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    
     max-width: 1047px;
     margin: 0 auto;
 }
